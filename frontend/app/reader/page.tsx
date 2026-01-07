@@ -71,7 +71,7 @@ export default function ReaderPage() {
   return (
     <div className="flex h-screen bg-white dark:bg-neutral-900 overflow-hidden">
       {/* Sidebar - TOC */}
-      <aside className="w-80 border-r border-neutral-200 dark:border-neutral-800 flex flex-col bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-xl shrink-0">
+      <aside className="w-80 border-r border-neutral-200 dark:border-neutral-800 flex flex-col bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-xl shrink-0 h-full overflow-hidden">
         <div className="p-6 border-b border-neutral-200 dark:border-neutral-800 shrink-0">
           <h2 className="font-semibold text-neutral-900 dark:text-white truncate" title={data.title}>
             {data.title}

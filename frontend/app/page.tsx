@@ -49,7 +49,9 @@ export default function Home() {
       });
 
       if (!response.ok) {
-        throw new Error('Upload failed');
+        const errorText = await response.text();
+        console.error('Server responded with error:', errorText);
+        throw new Error(`Upload failed: ${response.status} ${response.statusText} - ${errorText}`);
       }
 
       const data = await response.json();
